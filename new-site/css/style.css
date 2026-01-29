@@ -7,14 +7,16 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 body{
-  background-color:rgb(54, 53, 59)
+  background-color:rgb(54, 53, 59);
+  text-align: center;
 }
 
 .text-box{
   background-color: #ffffff;
-  padding: 70px;
+  margin-top: 50px;
   margin-left: 30px;
   margin-right: 30px;
+  padding: 70px;
   border-radius: 30px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -22,13 +24,23 @@ body{
 
 }
 
+.text-box img{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 .text-box p{
-  color:rgb(109, 107, 117)
+  color:rgb(109, 107, 117);
+  font-size: 20px;
 }
 
 h1{
   text-align: center;
-  color : #a9adbb
+  color : #a9adbb; 
 }
 
 p{
