@@ -1,4 +1,5 @@
-run using npm run build
+steps to run:
 
-index.html has site structure
-style.css contains desc/settings of each div class
+cd new-site
+npm install 
+npm run start
