@@ -1,2 +1,2 @@
-##CYA CPTS360 Description 
+# CYA CPTS360 Description 
 For this extracurricular assignment, I wanted to test my skills with web design and learn more about how website hosting works. This goes along with networking topics we have recently learned in 360. Front end is more exciting to me as a potential career as it combines coding with my creative/artistic hobbies. I know many nice templates exist for portfolios, but I wanted to challenge myself and create something from the ground up to familiarize myself with html and css. My final portfolio can be used to establish contact with employers and display my work. 
