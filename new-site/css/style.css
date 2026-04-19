@@ -12,11 +12,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #fff;
-  border: 2px solid #000;
+  border: 2px solid hsl(0, 0%, 100%);
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -31,16 +31,9 @@
   background-color: #f0f0f0;
 }
 
-
-
-
-
 body{
-
   background-image: url(../images/windowsBliss.jpg);
   background-size: cover;
-
-  background-color:rgb(67, 52, 138);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -54,31 +47,38 @@ body{
   border-radius: 30px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold; 
+  font-size: clamp(1.8rem, 3.8vw, 3rem);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  color:rgb(23, 0, 124)
 
 }
 
 .intro-section img{
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 40px;
 }
 
 
 .intro-section p{
   color:rgb(163, 161, 170);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight:800;
+  font-size: 10px;
+}
+
+.intro-section .intro-title {
+  font-size: clamp(1.8rem, 3.8vw, 3rem);
+  text-align: center;
+  margin: 0 0 28px;
 }
 
 h1{
-  text-align: center;
   color : #251b5f; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 40px; 
+  font-weight: 800;
 }
 
 p{
@@ -88,13 +88,14 @@ p{
 
 .content-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: center;
   gap: 40px;
 }
 
 .pfp{
-  width: 250px;
-  height: 250px;
+  width: clamp(140px, 24vw, 300px);
+  height: clamp(140px, 24vw, 300px);
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -102,8 +103,47 @@ p{
 .bio{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   font-size: 1.2rem;
+  height: clamp(140px, 24vw, 300px);
+  max-width: 620px;
+}
+
+.intro-section .bio p {
+  color: rgb(119, 122, 129);
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.intro-section .bio p:first-child {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.intro-section .bio .bio-highlight {
+  color: #a6ce72;
+  font-size: clamp(1.15rem, 2.1vw, 1.8rem);
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio {
+    height: auto;
+    text-align: center;
+  }
+
+  .intro-section .bio .bio-highlight {
+    margin-top: 12px;
+  }
 }
 
 /* ==========================================================================
